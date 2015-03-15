@@ -9,8 +9,15 @@ This project contains 4 files.
 
 4. LoadLib.c : This is the main program that loads the libfoo.dll and calls its functions.
 
+To compile libfoo.dll, run:
+
+1. x86_64-w64-mingw32-gcc -c -Wall -Werror -fpic foo.c
+
+2. x86_64-w64-mingw32-gcc -shared -o libfoo.dll foo.o
+
+
 To test the project, run:
 
-x86_64-w64-mingw32-gcc LoadLib.c -o Load.exe
+1. x86_64-w64-mingw32-gcc LoadLib.c -o Load.exe
 
-./Load.exe
+2. ./Load.exe
